@@ -1,0 +1,303 @@
+/* En este archivo escriban su CSS */
+
+/* Fonts */
+/* Importar aquí la font */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+
+
+
+
+/* Aquí les dejamos como ayuda este "reset" en el cual ajustamos algunas propiedades
+*  cuyos valores asigna por defecto el navegador.
+*/
+
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* Para que el scrolleo en la one page sea suave */
+    scroll-behavior: smooth;
+}
+
+/* ESTO LO AGREGO YO AL BODY */
+
+body {
+    background: #fbfbfb;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #0f0f0f;
+
+}
+/* ESTO LO AGREGO YO AL HEADER*/
+header{
+    position: fixed;
+    left: 0;
+    right: 0;
+    width: 90;
+    height: 90px;
+    box-shadow: 0, 10px 20px
+}
+
+header {
+    box-sizing: border-box;
+    padding: 2em 0;
+    border-bottom: 1px solid;
+    
+}
+
+header{
+    background-color: #fbfbfb;
+}
+
+header img{
+    width: 35px;
+    height: 35px;
+    
+}
+
+header a:hover {
+    color: #af599e;
+
+}
+header ul {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header li {
+    margin-right: 20px;
+}
+/* Para quitar los puntos a los items de listas */
+header ul {
+    list-style: none;
+}
+
+/* Para que los enlaces hereden el color de texto y no tengan subrayado */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Este max-width es para que el contenido no se "estire" demasiado hacia los costados y
+*  el margin: auto; para tenerlo centrado fácilmente ;)
+*/
+main {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* ESTO LO AGREGO YO AL MAIN */
+
+main {
+    padding: 3rem;
+}
+
+.logo-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li {
+    background-color: #fbfbfb;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.Foto img{
+    display: inline-block;
+    margin-bottom: 10px;
+    line-height: 1;
+    width: 20em;
+    height: 20em;
+    border-radius: 50%;
+}
+
+p {
+    justify-content: center;
+    padding: 10px;
+    text-align: justify;
+}
+
+section h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+#SobreMi h1{
+    line-height: 5em;
+}
+
+#Nombre {
+    font-size: 28px;
+}
+
+
+section h2 a {
+    font-size: 18px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#miCV {
+    max-width: 30%;
+    margin: 10px;
+    border: 10px;
+        
+    background-color: #af599e;
+    border-radius: 50px;
+    text-align: center;
+    color: #fbfbfb;
+    text-decoration: none;
+    padding: 0 0.5em;
+    line-height: 2.5em;
+    transition: background-color 0,3 #e093cd
+}
+
+#miCV:hover {
+    background-color: #e093cd;
+    color: #0f0f0f;
+
+}
+
+.miCV:active {
+    transform: scale(.95);
+}
+
+miCV a {
+    text-align: center;
+    
+}
+
+#hablemos {
+    line-height: 25px;
+}
+
+#Laboral {
+    text-align: center;
+}
+
+#Social {
+    text-align: center;
+    
+}
+
+h3 {
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+    font-style: italic;
+}
+
+#hablemos li {
+    background-color: #e093cd;
+    border-radius: 20px;
+    list-style: none;
+    padding: 15px;
+}
+
+#Contacto {
+    padding: 20px;
+}
+
+/*
+#Redes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px;
+    
+}
+
+*/
+.Redes img {
+    display: flexbox;
+    margin-bottom: 1rem;
+    line-height: 1;
+    width: 60px;
+    height: 60px;
+
+}
+
+
+.Redes{
+    list-style: none;
+    text-align: center;
+}
+
+.Redes ul li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+    
+}
+
+.Redes ul li a {
+    display: block;
+    padding: 0,5rem 1rem;
+    line-height: 30px;
+    list-style: none;
+}
+
+/*
+.Redes ul a img{
+    display: inline-block;
+    margin-bottom: 1px;
+    line-height: 1;
+    width: 30px;
+    height: 30px;
+}
+*/
+/*
+.Redes ul a img {
+    display: block;
+    justify-items: center;
+    
+}*/
+
+
+footer p {
+    background-color: #af599e;
+    font-family: 'Lato', sans-serif;
+    color: #fbfbfb;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+/* Recomendaciones! 
+*  - Comenzar desde lo más general y luego ir hacia lo mas específico, asignando primero
+*    "estilos generales". Una buena idea sería comenzar por el <body> ;)
+*
+*  - Recuerden que queremos evitar "repetir código", en CSS usando la cualidad de la herencia
+*    podemos setear ciertas propiedades en un elemento padre y dejar que sean heredadas (por ejemplo: font-size)
+*
+*  - Nadie sabe todas las propiedades CSS de memoria, si no saben como hacer algo no lo recuerdan, la respuesta
+*    pueden encontrarla buscando en la web algo como "CSS como hacer ... " o "propiedad css para hacer ..."
+*
+*  - Usen mucho las herramientas para desarrolladores del navegador para ir
+*    probando el CSS que escriben, resolver dudas y problemas.
+*
+*  - Paciencia, resiliencia y creatividad! No se desanimen, las primeras experiencias maquetando con HTML y CSS
+*    pueden ser frustrantes, pero estas habilidades se van desarrollando con la experiencia, es como aprender
+*    un trabajo manual, hacer una artesanía, tocar un instrumento musical... la práctica es todo!
+*/
